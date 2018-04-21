@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   btnToggle;
 
+  mainPhoto = 'https://doc-00-1o-docs.googleusercontent.com/docs/securesc/oh4jrtgb6c9ridfg64858252f6quuml3/rfrllga7od0qvqor1uh2133lu2j07q9p/1524312000000/09949532948611086848/08009839428930033685/16ZNGS6RhM5OPsu_Lx22sSMSFtXol49Ih?e=download&nonce=0fsc7sdrh07cq&user=08009839428930033685&hash=g19jfnijeto3i6523sujkqa2chq61t1g';
+
 
   posts = [
     {

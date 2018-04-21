@@ -2,7 +2,7 @@
 @import '~assets/mixins'
 
 :host
-	background-color $primary
+	background-color lighten($primary, 10)
 	display block
 	padding-bottom 300px
 
@@ -11,7 +11,7 @@ header
 	height 75vh
 	
 	min-height 430px
-	background-image url('https://images.unsplash.com/photo-1504532472068-9ae844337da7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e76ebffebd8e3c65985875554e36f35&auto=format&fit=crop&w=1468&q=80')
+	
 	background-size cover
 	background-position center 
 	background-repeat no-repeat
@@ -53,8 +53,8 @@ h2
 .content-wrapper
 	margin-top 40px
 
-.card-wrapper
-	margin-bottom: 40px
-	&:nth-child(even)
-		border-left: 2px solid $accent
+// .card-wrapper
+// 	margin-bottom: 40px
+// 	// &:nth-child(odd)
+// 	border: 2px solid $accent
 		
