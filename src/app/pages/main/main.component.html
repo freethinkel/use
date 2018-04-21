@@ -2,10 +2,10 @@
   <div class="container">
     <h1>Амир Мухаметянов</h1>
     <h2>Designer</h2>
-    <button class="btn white-border" [class.clicked]="btnToggle" (click)="toggle()" [routerLink]="['/portfolio']">Мои работы</button>
+   
   </div>
 </header>
-
+<app-header></app-header>
 <div class="content-wrapper">
   <div class="container">
     <div class="col l6" *ngFor="let post of posts">
