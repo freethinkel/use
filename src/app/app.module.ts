@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { PostCardComponent } from './shared/post-card/post-card.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { PortCardComponent } from './shared/port-card/port-card.component';
+import { SocialBtnsComponent } from './shared/social-btns/social-btns.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PortCardComponent } from './shared/port-card/port-card.component';
     HeaderComponent,
     PostCardComponent,
     PortfolioComponent,
-    PortCardComponent
+    PortCardComponent,
+    SocialBtnsComponent
   ],
   imports: [
     BrowserModule,

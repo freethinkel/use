@@ -4,11 +4,18 @@
     <h2>Designer</h2>
    
   </div>
+  <div class="social-btns-wrapper">
+    <app-social-btns></app-social-btns>
+  </div>
 </header>
 <app-header></app-header>
 <div class="content-wrapper">
   <div class="container">
-
+    <div class="last-port">
+      <div class="col l4" *ngFor="let port of ports">
+        <app-port-card [data]="port"></app-port-card>
+      </div>
+    </div>
     <div class="col l6 card-wrapper" *ngFor="let post of posts">
 
       <app-post-card [post]="post"></app-post-card>

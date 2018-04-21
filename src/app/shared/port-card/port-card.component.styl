@@ -28,7 +28,7 @@
 			bottom 0
 			overflow hidden
 			&:hover .wave
-				width: 1000px
+				width: 500px
 				height @width
 				filter: blur(0)
 			&:hover
@@ -55,10 +55,9 @@
 		
 
 .wave	
-	background-position center 
-	background-size cover
+	background-color rgba($accent, 0.5)
 	width 30px
-	filter: blur(50px)
+	filter: blur(10px)
 	height @width
 	border-radius 50%
 	transition 0.5s
