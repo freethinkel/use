@@ -1,0 +1,15 @@
+<header>
+  <div class="container">
+    <h1>Амир Мухаметянов</h1>
+    <h2>Designer</h2>
+    <button class="btn white-border" [class.clicked]="btnToggle" (click)="toggle()" [routerLink]="['/portfolio']">Мои работы</button>
+  </div>
+</header>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="col l6" *ngFor="let post of posts">
+      <app-post-card [post]="post"></app-post-card>
+    </div>
+  </div>
+</div>

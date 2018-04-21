@@ -1,0 +1,13 @@
+<header [style.backgroundImage]="'url('+image+')'">
+  <div class="container">
+    <h1>Мои работы</h1>
+  </div>
+</header>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="col l6" *ngFor="let port of ports">
+      <app-port-card [data]="port"></app-port-card>
+    </div>
+  </div>
+</div>

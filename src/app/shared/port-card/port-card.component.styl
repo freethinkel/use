@@ -1,0 +1,63 @@
+
+.port-card 
+	&-wrapper
+		background-size cover
+		background-position center  
+		background-color rgba(0,0,0,.2)
+		box-shadow 0px 40px 45px -30px rgba(0,0,0,.2), 0px 2px 30px -5px rgba(0,0,0,.2)
+		height 300px
+		position relative
+		display flex
+		justify-content center 
+		align-items center
+		border-radius 10px
+		overflow hidden
+		margin-bottom 30px
+		&-overlay 
+			opacity 0
+			position absolute
+			transition .3s
+			top 0
+			display flex
+			justify-content center 
+			align-items center
+			right 0
+			left 0
+			bottom 0
+			overflow hidden
+			&:hover .wave
+				width: 1000px
+				height @width
+				filter: blur(0)
+			&:hover
+				opacity .99
+				top 10px
+				border-radius 10px
+				bottom @top
+				right @top
+				left @top
+			 
+		&:hover .port-card-title
+			opacity 1
+			margin-top 0
+			font-size 27px
+	&-title
+		pointer-events none
+		font-size 27px
+		margin-top -5px
+		position absolute
+		color #fff
+		opacity 0
+		transition .3s
+		text-shadow 0 2px 3px rgba(0,0,0,.4)
+		
+
+.wave	
+	background-position center 
+	background-size cover
+	width 30px
+	filter: blur(50px)
+	height @width
+	border-radius 50%
+	transition 0.5s
+	position absolute
