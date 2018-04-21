@@ -1,10 +1,13 @@
+@import '~assets/colors'
+@import '~assets/mixins'
+
 :host
-	background-color #fcfcfc
+	background-color $primary
 	display block
 	padding-bottom 300px
 
 header 
-	background-color #fff
+	//background-color #fff
 	height 75vh
 	min-height 430px
 	background-image url('https://images.unsplash.com/photo-1504532472068-9ae844337da7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e76ebffebd8e3c65985875554e36f35&auto=format&fit=crop&w=1468&q=80')
@@ -25,12 +28,12 @@ header
 		left 0
 		bottom 0
 		right 0
-		background-color #000000
-		opacity 0.2
+		background-color $primary
+		opacity 0.8
 		z-index -1
 
 h1
-	font-family "Roboto"
+	font-family "Google"
 	text-align center
 	color #ffffff
 	font-size 70px
@@ -38,13 +41,15 @@ h1
 	font-weight bold
 
 h2
-	font-family "Roboto"
+	font-family "Google"
 	text-align center
 	color #ffffff
 
-
-.white-border
-
-
 .content-wrapper
 	margin-top 40px
+
+.card-wrapper
+	margin-bottom: 40px
+	&:nth-child(even)
+		border-left: 2px solid $accent
+		
