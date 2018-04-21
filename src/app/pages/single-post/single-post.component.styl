@@ -1,0 +1,46 @@
+@import '~assets/colors'
+@import '~assets/mixins'
+
+:host 
+  display: block
+  min-height: 100vh
+  background-color: lighten($primary, 10)
+header 
+  height 75vh
+  min-height 430px
+  background-size cover
+  background-position center 
+  background-repeat no-repeat
+  display flex
+  flex-direction column
+  justify-content center
+  width 100%
+  position relative
+  &::before
+    content: ''
+    position: absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background: linear-gradient(0deg, lighten($primary, 10), rgba(0 0 0 0))
+
+.container-post
+  max-width: 800px
+  background-color: darken($primary, 5)
+  margin-top: -50px
+  z-index 1
+  position relative
+  box-shadow: 0 10px 15px 1px rgba(0 0 0 0.4)
+  border-radius: 10px
+  height 100vh
+  padding: 16px 24px
+
+.post 
+  &-title
+    text-align: center
+    font-family: "Google"
+    color: $accent
+    font-size 40px
+    letter-spacing: 1px
+    font-weight 800
