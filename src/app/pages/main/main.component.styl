@@ -2,7 +2,7 @@
 @import '~assets/mixins'
 
 :host
-	background-color lighten($primary, 10)
+	background linear-gradient(45deg, lighten($primary, 80), lighten($primary, 95))
 	display block
 	padding-bottom 300px
 
@@ -40,7 +40,8 @@ header
 h1
 	font-family "Google"
 	text-align center
-	color #ffffff
+	color lighten(red, 20)
+	text-shadow 5px -5px lighten(blue, 20)
 	font-size 70px
 	margin 0
 	font-weight bold
@@ -48,13 +49,12 @@ h1
 h2
 	font-family "Google"
 	text-align center
-	color #ffffff
+	color lighten(red, 20)
+	text-shadow 5px -5px lighten(blue, 20)
 
 .content-wrapper
 	margin-top 40px
 
-// .card-wrapper
-// 	margin-bottom: 40px
-// 	// &:nth-child(odd)
-// 	border: 2px solid $accent
+.card-wrapper
+	margin-bottom 70px
 		

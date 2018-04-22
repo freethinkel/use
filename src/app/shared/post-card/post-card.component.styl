@@ -3,71 +3,52 @@
 
 :host
 	display block
-	background-color: darken($primary, 5)
-	// border 1px solid $accent
-	box-shadow 0px 40px 45px -30px rgba(0,0,0,.2), 0px 2px 30px -5px rgba(0,0,0,.2)
-	padding-bottom 15px
-	border-radius 12px
-	overflow hidden
-	padding 10px
-	margin-bottom 25px
+	width 100%
+	position relative
+	height 300px
 
 
-.header
+.content-card
+	padding 30px
+	box-shadow 0 30px 30px -15px rgba(0 0 0 0.1), 0 3px 10px 0px rgba(0 0 0 0.2)
+	brs()
+	top 40px
+	position absolute
+	width 55%
+	z-index 2
+	display flex
+	flex-direction column
+	justify-content space-between
+	background-color #fff
+	bottom 0
+
+.image-card
+	background-position center 
+	background-size cover
+	right 0px
+	position absolute
+	display inline-block
+	top 0
+	bottom 40px
+	width 55%
+.header-wrapper	
 	display flex
 	justify-content space-between
 	align-items center
-	width 100%
-	// background-color #242424
-	color $black
-	padding 20px 16px
-	box-sizing border-box
-
+	margin-bottom 10px
 
 .title
-	font-size 18px
-	font-weight bold
-	color $accent	
-.date
-	color #fff
-	font-size 12px
-.content
-	letter-spacing: 0.5px
-	color #fff
-	font-size 14px
-	padding 10px 16px
-.more-btn
-	background-color: transparent
-	color: $black
-	font-weight: 800
-	padding: 0
-	letter-spacing: 1px
-	margin 0
-	color $accent
-	height 30px
-	line-height 30px
-	text-align center
-	position relative
-	&:hover::after 
-		width: 100%
-	&::after
-		content: ""
-		transition()
-		box-sizing: border-box
-		position: absolute
-		height 2px
-		background-color: $accent
-		display block
-		margin: 0 auto
-		left 0
-		right 0
-		width 0
-		bottom: 0
+	font-size 32px
+	font-family "Google"
+	font-weight 800
 
-.footer-wrapper
-	padding 0 16px
-	box-sizing border-box
-	justify-content: space-between
-	display flex
-	width 100%
-	align-items: center
+.footer-wrapper 
+	margin-top 20px
+.more-btn 
+	margin 0
+	border 3px solid $primary
+	font-size 14px
+	font-weight 800
+	height 36px 
+	width 120px
+	line-height 32px

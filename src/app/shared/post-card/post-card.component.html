@@ -1,10 +1,13 @@
-<div class="header">
-  <div class="title"> {{ post.title }} </div>
+<div class="content-card">
+  <div class="header-wrapper">
+    <div class="title"> {{ post.title }} </div>
+    <div class="date"> {{ post.date }} </div>
+  </div>
+  <div class="content"> {{ post.content }} </div>
+  <div class="footer-wrapper">
+    <button class="btn more-btn">Подробнее</button>  
+  </div>
 </div>
+<div class="image-card" [style.backgroundImage]="'url('+post.image+')'"></div>
 
-<div class="content"> {{ post.content }} </div>
-<div class="footer-wrapper">
-  <button class="btn more-btn">Подробнее</button>
-  <div class="date"> {{ post.date }} </div>
-  
-</div>
+

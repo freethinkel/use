@@ -9,6 +9,7 @@ import { PostCardComponent } from './shared/post-card/post-card.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { PortCardComponent } from './shared/port-card/port-card.component';
 import { SocialBtnsComponent } from './shared/social-btns/social-btns.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SocialBtnsComponent } from './shared/social-btns/social-btns.component'
     PostCardComponent,
     PortfolioComponent,
     PortCardComponent,
-    SocialBtnsComponent
+    SocialBtnsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

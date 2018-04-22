@@ -8,34 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   btnToggle;
 
-  mainPhoto = 'https://doc-00-1o-docs.googleusercontent.com/docs/securesc/oh4jrtgb6c9ridfg64858252f6quuml3/rfrllga7od0qvqor1uh2133lu2j07q9p/1524312000000/09949532948611086848/08009839428930033685/16ZNGS6RhM5OPsu_Lx22sSMSFtXol49Ih?e=download&nonce=0fsc7sdrh07cq&user=08009839428930033685&hash=g19jfnijeto3i6523sujkqa2chq61t1g';
+  mainPhoto = 'https://images.unsplash.com/photo-1513505108218-1bd04056178c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=909542fe91b705942276d106bba6d548&auto=format&fit=crop&w=634&q=80';
 
 
   posts = [
     {
       id: 1,
+      image: 'https://images.unsplash.com/photo-1515261197749-867a029926fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04e9cec9b60e804719392deb9030375f&auto=format&fit=crop&w=967&q=80',
       title: 'Искусство из мусора',
       date: 'Вт, 3 апреля 2018',
       content: 'Время действия – наши дни. Место действия – Кения. Искусство и экология имеют много общего, как полагают кураторы проекта, суть которого: утилизация пластиковых отходов. Они становятся предметами обихода.',
     },
     {
       id: 2,
+      image: 'https://images.unsplash.com/photo-1518444133586-02e3d14055c1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9cbf815eea7f7a052ae0662c7b50f7e1&auto=format&fit=crop&w=634&q=80',
       title: 'Искусство из мусора - 2',
       date: 'Вт, 3 апреля 2018',
       content: 'Время действия – наши дни. Место действия – Кения. Искусство и экология имеют много общего, как полагают кураторы проекта, суть которого: утилизация пластиковых отходов. Они становятся предметами обихода.',
     },
     {
       id: 3,
+      image: 'https://images.unsplash.com/photo-1507067100611-3c1b9c21c53f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f47c2399a15c389a2bbd4df313e124a4&auto=format&fit=crop&w=1050&q=80',
       title: 'Искусство из мусора',
       date: 'Вт, 3 апреля 2018',
       content: 'Время действия – наши дни. Место действия – Кения. Искусство и экология имеют много общего, как полагают кураторы проекта, суть которого: утилизация пластиковых отходов. Они становятся предметами обихода.',
-    },
-    {
-      id: 2,
-      title: 'Искусство из мусора - 2',
-      date: 'Вт, 3 апреля 2018',
-      content: 'Время действия – наши дни. Место действия – Кения. Искусство и экология имеют много общего, как полагают кураторы проекта, суть которого: утилизация пластиковых отходов. Они становятся предметами обихода.',
-    },
+    }
   ];
 
   ports = [
